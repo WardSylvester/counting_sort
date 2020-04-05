@@ -13,9 +13,9 @@ Does not use comparisons, giving it the ability to sort in linear time.
 Good at sorting small integers with multiple counts.
 
 Disadvantages:
-Not very efficient when integers in input are very large, lots of unneeded space used 
+Not very efficient when integers in input are very large, lots of unneeded space used.
 Cannot sort floats.
-Uses auxillary memory
+Uses auxillary memory.
 
 
 Alogorithm:
@@ -33,4 +33,5 @@ def counting_sort(A, k):
     for i in range(len(A)-1, -1, -1):
         B[C[A[i]]-1] = A[i]
         C[A[i]] -= 1
+        
     return B
